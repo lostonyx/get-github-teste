@@ -1,0 +1,76 @@
+
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="">
+
+        <title>Teste</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="http://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            .hidden {
+                display: none;
+            }
+            .image {
+                width: 80px;
+                height: 80px;
+            }
+        </style>
+    </head>
+
+    <body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Procurar usuário</h5>
+                    <form id="searchUser" onsubmit="return false">
+                        <input type="name" id="user" class="form-control" placeholder="Digite o user" required>
+                        <button class="btn btn-primary mt-2" type="submit">Pesquisar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <table class="table" id="userTable">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>User</th>
+                    <th>Link</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+
+        <table class="table" id="reposTable">
+            <thead>
+                <tr>
+                    <th>Nome do repositório</th>
+                    <th>Link do repositório</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+
+    </div>
+</div>
+
+        <!-- Bootstrap core JavaScript -->
+        <script src="http://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="http://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="index.js"></script>
+
+    </body>
+</html>
