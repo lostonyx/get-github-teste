@@ -82,7 +82,7 @@ function searchRepo(repo) {
         document.getElementById("divAllUsers").style.display = "none";
         document.getElementById("reposTable").style.display = "initial";
         document.getElementById("divAllRepos").style.display = "none";
-        loopRepos(reply.items);
+        loopRepos(reply.items   );
     };
     request.send();
 }
@@ -92,6 +92,10 @@ function getRepos(user) {
     request.open('get', 'http://api.github.com/users/' + user + '/repos', true);
     request.onload = function() {
         const reply = JSON.parse(this.responseText);
+        document.getElementById("userTable").style.display = "none";
+        document.getElementById("divAllUsers").style.display = "none";
+        document.getElementById("reposTable").style.display = "initial";
+        document.getElementById("divAllRepos").style.display = "none";
         loopRepos(reply);
     };
     request.send();
